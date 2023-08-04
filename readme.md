@@ -21,7 +21,7 @@ To get started with IT-Toolbox, follow these simple steps:
 
 1. **Clone the Repository:** Clone this repository to your local machine using the following command:
 
-git clone https://github.com/yourusername/IT-toolbox.git
+git clone https://github.com/xlinka/IT-toolbox.git
 
 2. **Explore the Scripts:** Browse through the various scripts available in the repository. Each script is located in its own directory with a descriptive name.
 
