@@ -17,12 +17,13 @@ if %ERRORLEVEL% NEQ 0 (
     exit /b 1
 )
 
-REM Reset DNS client settings
-echo Resetting DNS client settings...
-net stop "Dnscache"
-net start "Dnscache"
+REM Stop and start the DNS Client service
+echo Restarting DNS Client service...
+sc stop Dnscache
+timeout /t 3 > nul
+sc start Dnscache
 if %ERRORLEVEL% NEQ 0 (
-    echo An error occurred while resetting DNS client settings.
+    echo An error occurred while restarting the DNS Client service.
     pause
     exit /b 1
 )
